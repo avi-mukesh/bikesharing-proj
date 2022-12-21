@@ -18,7 +18,7 @@ The best performing model was still Weighted_Ensemble_L3, however, the performan
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-After changing the num_bag_folds to 10, the Kaggle score actually decreased. The score was now -30.07 (same model). So I changed some other parameters as well - I set num_stack_levels to 10 and num_bag_sets to 2 (keeping 10 num_bag_folds) but in fact got a worse performance, with a larger RMSE on the unseen data. As a final effort, I then also doubled the time limit to 12 minutes, but observed no difference.
+After changing the num_bag_folds to 10, the Kaggle score actually decreased. The evaluation score was now -30.07 (same model). So I changed some other parameters as well - I set num_stack_levels to 10 and num_bag_sets to 2 (keeping 10 num_bag_folds) but in fact got a worse performance, with a larger RMSE on the unseen data. As a final effort, I then also doubled the time limit to 12 minutes, but observed no difference.
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
 I would spend more time on the EDA because there are lots of variables to understand first. For example, I would also create extra columns for month and year to see if there are any correlations with these and the delivery count. 
